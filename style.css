@@ -1,0 +1,46 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.glogo{
+    width: 200px;
+    height: 200px;
+    border-top: 40px solid #ec4335;
+    border-bottom: 40px solid #34a856;
+    border-left: 40px solid #fbbc05;
+    border-right: 40px solid #4385f6;
+    border-radius: 50%;
+    position: relative;
+}
+
+.glogo::before{
+    content: "";
+    position: absolute;
+    height: 40px;
+    width: 100px;
+    background-color: #4385f6;
+    top: 50%;
+    right: -38px;
+    transform: translateY(-50%);
+}
+.glogo::after{
+    content: "";
+    width:0;
+    height:0;
+    border-top: 80px solid transparent;
+    border-right: 80px solid aliceblue;
+    position: absolute;
+    top: -40px;
+    right: -40px;
+}
